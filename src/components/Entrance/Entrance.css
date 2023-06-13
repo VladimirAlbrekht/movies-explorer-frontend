@@ -1,0 +1,159 @@
+.entrance {
+  padding: 70px 0;
+  margin: 0 auto;
+  max-width: 396px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.entrance__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin: 40px 0;
+}
+
+.entrance__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  min-height: 393px;
+  justify-content: space-between;
+}
+
+.entrance__inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.entrance__label {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A0A0A0;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.entrance__label:last-of-type {
+  margin-bottom: 35px;
+}
+
+.entrance__input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 5px 0 10px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  outline: none;
+}
+
+.entrance__input:focus {
+  outline: none;
+  background-color: initial;
+  border-bottom: 1px solid #4285F4;
+}
+
+.entrance__input:invalid {
+  color: #EE3465;
+}
+
+.entrance__error {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #EE3465;
+  position: absolute;
+  top: 51px;
+  left: 0;
+}
+
+.entrance__submit-btn {
+  height: 45px;
+  color: #fff;
+  background: #4285F4;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 16px;
+}
+
+.entrance__submit-btn:disabled {
+  opacity: .2;
+  cursor: default;
+}
+
+.entrance__footer {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.entrance__subtitle {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #A0A0A0;
+}
+
+.entrance__link {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4285F4;
+}
+
+@media (max-width: 768px) {
+  .entrance {
+    box-sizing: border-box;
+    padding: 230px 0px 30px;
+    width: 100%;
+  };
+}
+
+@media (max-width: 568px) {
+  .entrance {
+    align-items: center;
+    justify-content: flex-start;
+    padding: 53px 0px 30px;
+    max-width: 260px;
+    height: 100vh;
+  }
+  .entrance__form {
+    max-width: 260px;
+    min-height: 480px;
+  }
+  .entrance__title {
+    margin: 50px 0 80px;
+  }
+  .entrance__subtitle {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .entrance__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+
+ 
+
+
+}

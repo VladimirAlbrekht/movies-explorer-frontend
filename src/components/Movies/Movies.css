@@ -1,0 +1,16 @@
+.movies {
+  padding: 18px 0 0;
+}
+
+@media (max-width: 768px) {
+  .movies {
+      padding: 18px 0 0;
+  }
+}
+
+
+@media (max-width: 568px) {
+ .movies {
+    padding: 18px 0 0;
+  }
+}
