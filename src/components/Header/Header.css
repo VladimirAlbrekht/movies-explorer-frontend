@@ -3,4 +3,5 @@
   display: flex;
   padding: 18px 0px;
   z-index: 20;
+  background-color: rgba(7, 48, 66, 1);
 }

@@ -7,7 +7,9 @@ function Header({ loggedIn }) {
   // ---РАЗМЕТКА JSX---
   return (
       <header className='header'>
+        <div className='container'>
        <Navigation loggedIn={loggedIn}/>
+       </div>
       </header>
   );
 };

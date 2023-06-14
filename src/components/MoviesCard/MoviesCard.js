@@ -2,13 +2,9 @@ import './MoviesCard.css';
 import { useState } from 'react';
 
 function MoviesCard({ card, onLike, savedPage }) {
-  const { nameRU, duration, thumbnail, movieId, saved } = card;
+  const { nameRU, duration, thumbnail, saved } = card;
   const [isSaved, setIsSaved] = useState(saved);
 
-  //обработчик клика по кнопке лайка
-  function handleLikeClick() {
-    onLike(card);
-  };
 
   //обработчик клика по кнопке сохранения
   function handleSaveClick() {

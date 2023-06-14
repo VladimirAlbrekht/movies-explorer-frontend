@@ -31,13 +31,13 @@ function Navigation({ loggedIn }) {
             />
             <div className={`menu__cover ${isClicked ? 'menu__cover_active' : ''}`}>  </div>
             <div className={`menu__box ${isClicked ? 'menu__box_open' : ''}`}>
-              <NavLink exact to='/' className='link menu__film-link' activeClassName="active" onClick={handleMenuClose}>
+              <NavLink exact="true" to='/' className='link menu__film-link' activeclassname="active" onClick={handleMenuClose}>
                 Главная
               </NavLink>
-              <NavLink to='/movies'  className='link menu__film-link'  activeClassName="active" onClick={handleMenuClose}>
+              <NavLink to='/movies'  className='link menu__film-link'  activeclassname="active" onClick={handleMenuClose}>
                 Фильмы
               </NavLink>
-              <NavLink to='/saved-movies'  className='link menu__film-link' activeClassName="active" onClick={handleMenuClose}>
+              <NavLink to='/saved-movies'  className='link menu__film-link' activeclassname="active" onClick={handleMenuClose}>
                 Сохраненные фильмы
               </NavLink>
               <Link to='/profile' className='menu__link menu__link_type_profile_active link' onClick={handleMenuClose}>

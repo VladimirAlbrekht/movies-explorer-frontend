@@ -1,5 +1,5 @@
 .about-project {
-   padding: 110px 30px;
+  padding: 110px 30px;
 }
 
 .about-project__container {
@@ -9,18 +9,18 @@
 }
 
 .about-project__item {
-    display: flex;
-    flex-direction: column;
-    max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
 }
 
 .about-project__subtitle {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.04em;
-    margin: 0 0 26px 0;
-  }
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  margin: 0 0 26px 0;
+}
 
 .about-project__description {
   font-weight: 400;
@@ -30,15 +30,15 @@
 }
 
 .about-project__grid-container {
-    display: grid;
-    grid-template-columns: 228px 1fr;
+  display: grid;
+  grid-template-columns: 228px 1fr;
 }
 
 
 .about-project__fontend {
-    width: 100%;
-    height: 100%;
-  }
+  width: 100%;
+  height: 100%;
+}
 
 .about-project__time {
   background-color: #303030;
@@ -66,33 +66,33 @@
 @media (max-width: 768px) {
   .about-project {
     padding: 90px 22px;
- }
+  }
 
- .about-project__description {
-  font-size: 12px;
-  line-height: 18px;
-  margin: 0 0 90px 0;
-}
+  .about-project__description {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 90px 0;
+  }
 
-
-.about-project__grid-container {
-  grid-template-columns: 140px 1fr;
-}
+  .about-project__grid-container {
+    grid-template-columns: 140px 1fr;
+  }
 }
 
 @media (max-width: 568px) {
   .about-project {
     padding: 70px 0;
- }
+  }
 
- .about-project__container {
-  padding-top: 60px;
-  display: block;
-}
- .about-project__subtitle {
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 16px;
+  .about-project__container {
+    padding-top: 60px;
+    display: block;
+  }
+
+  .about-project__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
   }
 
   .about-project__description {
@@ -104,11 +104,13 @@
   .about-project__grid-container {
     grid-template-columns: 100px 1fr;
   }
+
   .about-project__time {
     font-size: 11px;
     line-height: 13px;
     height: 35px;
   }
+
   .about-project__name {
     font-size: 11px;
     line-height: 13px;

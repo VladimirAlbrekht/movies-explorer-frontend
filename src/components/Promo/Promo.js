@@ -9,12 +9,11 @@ function Promo() {
   return (
     <section className='promo'>
       <div className='container'>
-      <Header />
         <div className='promo__container'>
           <div className='promo__content'>
             <h1 className='promo__title'>Учебный проект студента факультета Веб-разработки.</h1>
             <h2 className='promo__subtitle'>Листайте ниже, чтобы узнать больше про этот проект и его создателя.</h2>
-            <a href='#about-project'className='button promo__button'>Узнать больше</a>
+            <a href='#about-project' className='button promo__button'>Узнать больше</a>
           </div>
           <img
           className='promo__image'
@@ -22,7 +21,6 @@ function Promo() {
           alt="анимация веб-разработка"
         />
         </div>
-
       </div>
     </section>
   );

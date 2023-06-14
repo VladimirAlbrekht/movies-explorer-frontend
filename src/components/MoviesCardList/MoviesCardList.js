@@ -22,7 +22,7 @@ function MoviesCardList({ savedPage, onDelete }) {
         <div className='movie-list__container'>
           {moviesCards}
         </div>
-      <button className='movies-list__more-btn' type='button' aria-label='Показать еще'>Ещe</button>
+      <button className='button movies-list__more-btn' type='button' aria-label='Показать еще'>Ещe</button>
     </ul>
   );
 };

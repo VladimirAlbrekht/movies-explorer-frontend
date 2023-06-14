@@ -1,32 +1,32 @@
 .message {
-    width: 100%;
+  width: 100%;
+  margin-top: auto;
+  min-height: 13px;
+  margin-bottom: 20px;
+}
+
+.message__text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FF004C;
+  text-align: center;
+  margin: 0;
+}
+
+.message__text_type_success {
+  color: #2BE080;
+}
+
+@media screen and (max-width: 769px) {
+  .message {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .message {
     margin-top: auto;
-    min-height: 13px;
-    margin-bottom: 20px;
   }
-  
-  .message__text{
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
-    color: #FF004C;
-    text-align: center;
-    margin: 0;
-  }
-  
-  .message__text_type_success{
-    color: #2BE080;
-  }
-  
-  @media screen and (max-width: 769px){
-    .message{
-      margin-top: 0;
-    }
-  
-  }
-  
-  @media screen and (max-width: 650px){
-    .message{
-      margin-top: auto;
-    }
-  }
+}

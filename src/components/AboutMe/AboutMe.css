@@ -90,6 +90,7 @@
   .about-me__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column-reverse;
     padding-top: 60px;
     gap:50px

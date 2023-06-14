@@ -152,8 +152,7 @@
     line-height: 15px;
   }
 
-
- 
-
-
+  .entrance__error {
+    top: 46px;
+  }
 }

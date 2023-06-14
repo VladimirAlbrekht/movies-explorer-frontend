@@ -1,39 +1,55 @@
 import './Profile.css';
 import React from 'react';
+import { useFormWithValidation } from '../../hooks/useFormWithValidation';
+import InfoMessage from '../InfoMessage/InfoMessage';
 
 
-function Profile({ currentUser }) {
+function Profile({ onSignOut, infoMessage }) {
 
-  function onSignOut() {
-    console.log('Выход из системы')
-  }
+  const {values, errors, isValid, handleChange} = useFormWithValidation();
+  const [isInputActive, setIsInputActive] = React.useState(false);
 
-  function onSubmit() {
-    console.log('Изменения созранены')
-  }
 
+
+  
+  // ---ОБРАБОТЧИКИ---
+  // обработчик отправки формы
+  function handleSubmit(e) {
+   console.log('Сохранены изменения')
+  };
+
+  // обработчик для разблокирования полей ввода
+  function handleRedactClick() {
+    setIsInputActive(true);
+  };
 
   // ---РАЗМЕТКА JSX---
   return (
-    <section className='profile'>
+    <div className='profile'>
       <div className='profile__box'>
-        <h2 className='profile__title'>{`Привет, ${currentUser}!`}</h2>
-        <form className='profile__form' onSubmit={onSubmit}>
+        <h2 className='profile__title'>{`Привет, Виталий!`}</h2>
+        <form className='profile__form' onSubmit={handleSubmit}>
           <label className='profile__label'>Имя
             <input
+              value={values.name || 'Виталий'}
+              onChange={handleChange}
               type='text'
               className='profile__input'
               name='name'
               minLength='2'
               maxLength='30'
               required
-              title='Разрешено использовать латиницу, кириллицу, пробел или дефис'
-              pattern='^[A-Za-zА-Яа-яЁё /s -]+$'
               id='name'
+              disabled={!isInputActive}
             />
+            <span id="name-error" className='profile__error'>
+              {errors.name ? 'Поле должно быть заполнено и может содержать только латиницу, кириллицу, пробел или дефис' : ''}
+            </span>
           </label>
           <label className='profile__label'>Email
             <input
+              value={values.email || 'dvsvv@mail.ru'}
+              onChange={handleChange}
               type='email'
               className='profile__input'
               name='email'
@@ -41,12 +57,32 @@ function Profile({ currentUser }) {
               maxLength='30'
               required
               id='email'
+              disabled={!isInputActive}
             />
+            <span id='email-error' className='profile__error'>
+              {errors.email || ''}
+            </span>
           </label>
-          <>
+
+          <InfoMessage {...infoMessage} />
+          
+          {isInputActive ? (
+            <button
+              className={`profile__btn profile__btn_type_submit link`}
+              type='submit'
+              disabled={!isValid }
+            >
+              Сохранить
+            </button>
+          ) : (
+            <>
             <button
               className={`profile__btn profile__btn_type_redact link`}
-              type='button'>Редактировать</button>
+              type='button'
+              onClick={handleRedactClick}
+            >
+              Редактировать
+            </button>
             <button
               className='profile__btn profile__btn_type_logout link'
               type='button'
@@ -54,12 +90,12 @@ function Profile({ currentUser }) {
             >
               Выйти из аккаунта
             </button>
-          </>
+            </>
+          )}             
         </form>
-      </div>
-
-    </section>
+      </div> 
+    </div>
   );
 };
-
+  
 export default Profile;

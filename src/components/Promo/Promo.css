@@ -1,136 +1,130 @@
 .promo {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(7, 48, 66, 1);
-    padding-bottom: 75px;
-
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 48, 66, 1);
+  padding-bottom: 75px;
 }
 
 .promo__title {
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 58px;
-    margin: 0;
-    margin: 0 0 36px;
-    max-width: 640px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  margin: 0 0 36px;
+  max-width: 640px;
 }
 
 .promo__subtitle {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    margin: 0 0 146px;
-    max-width: 310px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin: 0 0 146px;
+  max-width: 310px;
 }
 
 .promo__button {
-    box-sizing: border-box;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: 1px solid #FFFFFF;
-    border-radius: 3px;
-    color: #FFFFFF;
-    text-decoration: none;
-    width: 129px;
-    height: 36px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 129px;
+  height: 36px;
 }
 
 .promo__container {
-    margin-top: 75px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    gap: 20px
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  gap: 20px
 }
 
 .promo__image {
-    width: 310px;
-    height: 304px;
-    animation: rotate 120s infinite;
+  width: 310px;
+  height: 304px;
+  animation: rotate 120s infinite;
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 768px) {
-    .promo__container {
-        margin: 0;
-        padding: 140px 0 0;
-        display: flex;
-        gap: 50px;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
+  .promo__container {
+    margin: 0;
+    padding: 140px 0 0;
+    display: flex;
+    gap: 50px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    }
+  .promo__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .promo__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  .promo__title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 22px;
+  }
 
-    }
-
-    .promo__title {
-        text-align: center;
-        font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 22px;
-    }
-
-    .promo__subtitle {
-        text-align: center;
-        max-width: 267px;
-        margin-bottom: 90px;
-    }
+  .promo__subtitle {
+    text-align: center;
+    max-width: 267px;
+    margin-bottom: 90px;
+  }
 }
 
 @media (max-width: 578px) {
-    .promo {
-        padding-bottom: 35px;
+  .promo {
+    padding-bottom: 35px;
+  }
+ 
+  .promo__image {
+    width: 210px;
+    height: 206px;
+  }
 
-    }
-    .promo__image {
-        width: 210px;
-        height: 206px;
-    }
+  .promo__title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+  }
 
-    .promo__title {
-        text-align: center;
-        font-size: 28px;
-        line-height: 38px;
-    }
+  .promo__container {
+    padding: 70px 0 0;
+    gap: 35px;
+  }
 
-    .promo__container {
-        padding: 70px 0 0;
-        gap: 35px;
-    }
+  .promo__subtitle {
+    margin: 0 0 80px;
+  }
 
-    .promo__subtitle {
-        margin: 0 0 80px;
-    }
-
-    .promo__title {
-        margin-bottom: 24px;
-    }
-
-    .promo {
-        min-height: inherit;
-    }
-
+  .promo__title {
+    margin-bottom: 24px;
+  }
+  
+  .promo {
+    min-height: inherit;
+  }
 }

@@ -46,8 +46,7 @@ function Entrance({
 
                             />
                             <span id='name-error' className='entrance__error'>
-                                {errors.name ? `Поле должно быть заполнено и может содержать только латиницу,
-                кириллицу, пробел или дефис` : ''}
+                                {errors.name || ''}
                             </span>
                         </label>
                     )}
