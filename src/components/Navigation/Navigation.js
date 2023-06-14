@@ -26,7 +26,7 @@ function Navigation({ loggedIn }) {
         {loggedIn ? (
           <>
             <button
-              className={`menu__btn ${isClicked ? 'menu__btn_type_close' : 'menu__btn_type_burger'} `}
+              className={`button menu__btn ${isClicked ? 'button menu__btn_type_close' : 'menu__btn_type_burger'} `}
               onClick={isClicked ? handleMenuClose : handleMenuOpen}
             />
             <div className={`menu__cover ${isClicked ? 'menu__cover_active' : ''}`}>  </div>

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useFormWithValidation } from '../../hooks/useFormWithValidation';
 import InfoMessage from '../InfoMessage/InfoMessage';
 
+
 function Entrance({
     type,
     linkTo,
@@ -12,19 +13,15 @@ function Entrance({
     btnName,
     linkName,
     subtitle,
-    onSubmit,
     infoMessage,
 }) {
-
     const { values, errors, isValid, handleChange } = useFormWithValidation();
 
-    // ---ОБРАБОТЧИКИ---
     function handleSubmit(e) {
         e.preventDefault();
         console.log('Заглушка:Форма отправлена');
     };
 
-    //---РАЗМЕТКА JSX---
     return (
         <main className='entrance'>
             <Logo />
@@ -46,7 +43,7 @@ function Entrance({
 
                             />
                             <span id='name-error' className='entrance__error'>
-                                {errors.name || ''}
+                                    {errors.name ? `Что-то пошло не так...` : ''}
                             </span>
                         </label>
                     )}
@@ -61,9 +58,10 @@ function Entrance({
                             required
                             value={values.email || ''}
                             onChange={handleChange}
+
                         />
                         <span id='email-error' className='entrance__error'>
-                            {errors.email || ''}
+                            {errors.email ? `Что-то пошло не так...` : ''}
                         </span>
                     </label>
                     <label className='entrance__label'>Пароль
@@ -79,7 +77,7 @@ function Entrance({
                             onChange={handleChange}
                         />
                         <span id='password-error' className='entrance__error'>
-                            {errors.password || ''}
+                            {errors.password ? `Что-то пошло не так...` : ''}
                         </span>
                     </label>
                     <InfoMessage {...infoMessage} />

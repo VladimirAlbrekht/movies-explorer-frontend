@@ -11,7 +11,7 @@ function SearchForm() {
           <button className='search-form__btn' type='submit'>Поиск</button>
         </div>
         <div className='search-form__filter-box'>
-          <label className='search-form__filter'>
+          <label className='button search-form__filter'>
             <input className='search-form__radio search-form__radio_off'
               type='radio'
               name='shortFilms'

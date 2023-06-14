@@ -26,7 +26,9 @@
   justify-content: space-between;
 }
 
-
+.search-form__container:has(.search-form__input:focus ){
+  border: 1px solid #4285F4;}
+ 
 .search-form__error {
   font-weight: 400;
   font-size: 10px;
@@ -57,7 +59,6 @@
 
 .search-form__input:focus {
   outline: none;
-  border-radius: 50px;
   color: #FFFFFF;
 }
 
@@ -188,5 +189,4 @@
     height: 56px;
     margin-left: 12px;
   }
-
 }

@@ -83,10 +83,22 @@
   }
 
   .technologies__list {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+    grid-gap: auto;
+    margin: 0 auto;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 0 20px;
+    align-content: center;
+
+  }
+  .technologies__item {
+    justify-self: center;
   }
 }
+
+@media (max-width: 368px) {
+  .technologies__list {
+    max-width: 180px;
+  }
+}
+

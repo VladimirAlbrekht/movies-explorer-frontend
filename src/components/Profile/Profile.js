@@ -1,6 +1,6 @@
 import './Profile.css';
 import React from 'react';
-import { useFormWithValidation } from '../../hooks/useFormWithValidation';
+import {useFormWithValidation} from '../../hooks/useFormWithValidation';
 import InfoMessage from '../InfoMessage/InfoMessage';
 
 
@@ -43,7 +43,7 @@ function Profile({ onSignOut, infoMessage }) {
               disabled={!isInputActive}
             />
             <span id="name-error" className='profile__error'>
-              {errors.name ? 'Поле должно быть заполнено и может содержать только латиницу, кириллицу, пробел или дефис' : ''}
+              {errors.name ? `Что-то пошло не так...` : ''}
             </span>
           </label>
           <label className='profile__label'>Email
@@ -60,7 +60,7 @@ function Profile({ onSignOut, infoMessage }) {
               disabled={!isInputActive}
             />
             <span id='email-error' className='profile__error'>
-              {errors.email || ''}
+              {errors.email ? `Что-то пошло не так...` : ''}
             </span>
           </label>
 

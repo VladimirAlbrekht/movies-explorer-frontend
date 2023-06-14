@@ -11,13 +11,6 @@
   margin-bottom: 25px;
 }
 
-.portfolio__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #424242;
-}
-
 .portfolio__name {
   font-weight: 400;
   font-size: 30px;
@@ -26,7 +19,7 @@
   margin: 20px 0;
 }
 
-.portfolio__item:last-child {
+.portfolio__link:last-child {
   border-bottom: none;
 }
 
@@ -37,6 +30,10 @@
   letter-spacing: -0.04em;
   color: #FFFFFF;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #424242;
 }
 
 @media(max-width: 768px) {
@@ -52,7 +49,7 @@
   .portfolio {
     padding: 0 0 65px;
   }
-  
+
   .portfolio__name {
     font-size: 28px;
   }
