@@ -38,9 +38,11 @@ function Entrance({
                                 minLength='2'
                                 maxLength='30'
                                 required
+                                placeholder="Введите ваше имя"
+                                title="Введите ваше имя"
                                 value={values.name || ''}
                                 onChange={handleChange}
-
+                                
                             />
                             <span id='name-error' className='entrance__error'>
                                     {errors.name ? `Что-то пошло не так...` : ''}
@@ -56,6 +58,8 @@ function Entrance({
                             minLength='2'
                             maxLength='30'
                             required
+                            placeholder="Укажите ваш email"
+                            title="Укажите ваш email"
                             value={values.email || ''}
                             onChange={handleChange}
 
@@ -71,10 +75,12 @@ function Entrance({
                             className='entrance__input'
                             name='password'
                             minLength='4'
-                            maxLength='20'
+                            maxLength='15'
                             required
                             value={values.password || ''}
                             onChange={handleChange}
+                            placeholder="Введите пароль"
+                            title="Введите пароль"
                         />
                         <span id='password-error' className='entrance__error'>
                             {errors.password ? `Что-то пошло не так...` : ''}

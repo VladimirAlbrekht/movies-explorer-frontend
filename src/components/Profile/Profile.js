@@ -41,6 +41,8 @@ function Profile({ onSignOut, infoMessage }) {
               required
               id='name'
               disabled={!isInputActive}
+              placeholder="Введите имя"
+              title="Введите имя"
             />
             <span id="name-error" className='profile__error'>
               {errors.name ? `Что-то пошло не так...` : ''}
@@ -58,6 +60,8 @@ function Profile({ onSignOut, infoMessage }) {
               required
               id='email'
               disabled={!isInputActive}
+              placeholder="Укажите ваш email"
+              title="Укажите ваш email"
             />
             <span id='email-error' className='profile__error'>
               {errors.email ? `Что-то пошло не так...` : ''}

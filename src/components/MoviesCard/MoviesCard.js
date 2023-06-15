@@ -30,7 +30,7 @@ function MoviesCard({ card, onLike, savedPage }) {
   return (
     <li className='movie'>
       <div className='movie__container'>
-        <a className='movie__link' href={card.trailer} target='_blank' rel='noreferrer'>
+        <a className='button movie__link' href={card.trailer} target='_blank' rel='noreferrer'>
           <img className='movie__pic' src={thumbnail} alt={nameRU} />
         </a>
         <div className='movie__info'>

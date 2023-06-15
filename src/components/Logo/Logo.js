@@ -6,7 +6,7 @@ function Logo() {
 
   // ---РАЗМЕТКА JSX---
   return (
-    <Link to='/' className='logo'>
+    <Link to='/' className='button logo'>
       <img className='logo__image' src={logo} alt='Логотип приложения Movies' />
     </Link>
   );
