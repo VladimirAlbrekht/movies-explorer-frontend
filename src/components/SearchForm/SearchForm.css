@@ -51,6 +51,7 @@
   max-width: 1140px;
   line-height: 1.28;
   margin-left: 25px;
+  color: #FFFFFF;
 }
 
 .search-form__input::placeholder {
@@ -59,7 +60,6 @@
 
 .search-form__input:focus {
   outline: none;
-  color: #FFFFFF;
 }
 
 .search-form__btn {
@@ -114,10 +114,6 @@
   padding: 2px;
   background-color: #ffffff;
   position: relative;
-}
-
-.search-form__filter_active {
-  background-color: #2BE080;
 }
 
 .search-form__radio {

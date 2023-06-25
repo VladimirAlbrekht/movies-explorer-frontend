@@ -1,7 +1,26 @@
 .header {
   width: 100%;
   display: flex;
-  padding: 18px 0px;
+  position: absolute;
   z-index: 20;
-  background-color: rgba(7, 48, 66, 1);
+  max-width: 1280px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 18px 70px;
+  box-sizing: border-box;
+}
+
+@media (max-width:768px) {
+  .header {
+    justify-content: space-between;
+    padding: 18px 30px;
+  }
+}
+
+@media (max-width:568px) {
+  .header {
+    justify-content: space-between;
+    padding: 14px;
+  }
 }

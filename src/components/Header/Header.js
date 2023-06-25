@@ -1,16 +1,15 @@
 import './Header.css';
 import Navigation from '../Navigation/Navigation';
+import Logo from '../Logo/Logo';
 
 
 function Header({ loggedIn }) {
-
   // ---РАЗМЕТКА JSX---
   return (
-      <header className='header'>
-        <div className='container'>
-       <Navigation loggedIn={loggedIn}/>
-       </div>
-      </header>
+    <header className='header'>
+      <Logo />
+      <Navigation loggedIn={loggedIn} />
+    </header>
   );
 };
 

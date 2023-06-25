@@ -14,13 +14,17 @@ function Entrance({
     linkName,
     subtitle,
     infoMessage,
+    onSubmit
 }) {
     const { values, errors, isValid, handleChange } = useFormWithValidation();
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log('Заглушка:Форма отправлена');
-    };
+    // ---ОБРАБОТЧИКИ---
+  function handleSubmit(e) {
+    e.preventDefault();
+    type === 'signup'
+      ? onSubmit(values.name, values.email, values.password)
+      : onSubmit(values.email, values.password);
+  };
 
     return (
         <main className='entrance'>

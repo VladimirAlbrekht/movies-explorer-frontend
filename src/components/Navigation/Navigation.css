@@ -1,7 +1,7 @@
 .menu {
   box-sizing: border-box;
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   color: #000;
@@ -139,6 +139,10 @@
 
 @media(max-width: 768px) {
   .menu {
+    width: auto;
+  }
+
+  .menu-container {
     width: auto;
   }
 

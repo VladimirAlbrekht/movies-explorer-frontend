@@ -4,14 +4,14 @@ import Profile from '../Profile/Profile';
 
 
 
-function ProfilePage({infoMessage}) {
+function ProfilePage({ onSignOut, onUpdate, infoMessage }) {
 
   // ---РАЗМЕТКА JSX---
   return (
     <section className='profile-page'>
       <div className='container'>
-        <Navigation loggedIn={true}/>
-        <Profile infoMessage={infoMessage}/>
+        <Navigation loggedIn={true} />
+        <Profile/>
       </div>
     </section>
 

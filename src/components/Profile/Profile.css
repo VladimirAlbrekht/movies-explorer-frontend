@@ -25,6 +25,7 @@
 
 .profile__form {
   flex-grow: 1;
+  min-height: 393px;
   display: flex;
   flex-direction: column;
   width: 100%;

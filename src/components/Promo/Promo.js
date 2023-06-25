@@ -1,5 +1,4 @@
 import './Promo.css';
-import Header from '../Header/Header';
 import promoImage from '../../images/background.png'
 
 

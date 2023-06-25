@@ -6,11 +6,18 @@
   border-top: 1px solid #2F2F2F;
 }
 
-.movie-list__container {
+
+
+.movies-list__container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 70px 0 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 38px 20px;
-  margin-bottom: 60px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-column-gap: 24px;
+  grid-row-gap: 30px;
+  justify-content: center;
+  justify-items: center;
 }
 
 .movies-list__more-btn {
@@ -24,7 +31,9 @@
   border: none;
   border-radius: 6px;
 }
-
+.movies-list__more-btn_hidden{
+  display: none;
+}
 @media (max-width: 768px) {
   .movie-list {
     box-sizing: border-box;

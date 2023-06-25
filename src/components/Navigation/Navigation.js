@@ -1,7 +1,6 @@
 import './Navigation.css';
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import Logo from '../Logo/Logo';
 
 
 function Navigation({ loggedIn }) {
@@ -20,9 +19,7 @@ function Navigation({ loggedIn }) {
   //---РАЗМЕТКА JSX---
   return (
     <div className='menu-container'>
-      <Logo />
       <nav className={`menu ${isClicked ? 'menu_open' : ''}`}>
-
         {loggedIn ? (
           <>
             <button
