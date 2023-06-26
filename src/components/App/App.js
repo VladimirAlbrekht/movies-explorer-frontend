@@ -187,6 +187,18 @@ function App() {
       });
     }
   };
+  
+  // Повторная автоматическая авторизация при перезагрузке страницы
+  React.useEffect(() => {
+    mainApi.checkToken()
+      .then((res) => {
+        if (res) {
+          handleLoggedIn();
+          navigate("/movies");
+        }
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
 
   return (
