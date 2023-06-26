@@ -65,5 +65,6 @@
     grid-template-columns: 1fr;
     gap: 34px;
     margin-bottom: 50px;
+    padding-top: 50px;
   }
 }
