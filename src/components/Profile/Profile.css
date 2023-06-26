@@ -25,7 +25,7 @@
 
 .profile__form {
   flex-grow: 1;
-  min-height: 393px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -85,7 +85,7 @@
 }
 
 .profile__btn_type_redact {
-  margin: 200px 0 16px;
+  margin: 0 0 16px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
