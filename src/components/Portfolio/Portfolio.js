@@ -16,7 +16,7 @@ function Portfolio() {
                 <h3 className='portfolio__name'>Адаптивный сайт</h3>
                 <p className='portfolio__icon'>↗</p>
              </a>
-             <a href='https://mesto-15.nomoredomains.monster' target='_blank' className='link portfolio__link'>
+             <a href='https://github.com/VladimirAlbrekht/react-mesto-api-full-gha' target='_blank' className='link portfolio__link'>
                 <h3 className='portfolio__name'>Одностраничное приложение</h3>
                 <p className='portfolio__icon'>↗</p>
              </a>
