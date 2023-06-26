@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
-import { useNavigate, Routes, Route, Navigate } from 'react-router-dom';
+import { useNavigate, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
 import Header from '../Header/Header';
 import Main from '../Main/Main';
@@ -34,8 +34,8 @@ function App() {
     code: SUCCESSFUL_CODE,
   });
 
-  const hiddenRoutes = ['/signup', '/signin'];
-
+  const location = useLocation();
+  const isHeaderVisible = !['/', '/movies', '/saved-movies', '/profile'].includes(location.pathname);
 
   // ---ЭФФЕКТЫ---
   // при логине, если получаем пользователя то обновляем стейты
@@ -196,7 +196,7 @@ function App() {
           <Preloader />
         ) : (
           <>
-            {!hiddenRoutes.includes(window.location.pathname) && <Header loggedIn={loggedIn} onSignOut={handleSignOut} />}
+            {!isHeaderVisible && <Header loggedIn={loggedIn} onSignOut={handleSignOut} />}
             <Routes>
               <Route path='/' element={<Main />} />
               <Route path='/movies' element={
