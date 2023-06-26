@@ -15,5 +15,5 @@
 * [Ссылка на сайт (frontend)] ( https://mymovies.nomoredomains.rocks)
 * [Ссылка на сайт (backend)] ( https://api.my-movies.nomoredomains.rocks/)
 * [Ссылка на GitHub pull request (Frontend)] ( https://github.com/VladimirAlbrekht/movies-explorer-frontend/pull/2 )
-* [Ссылка на GitHub на фронтенд-часть проекта] (https://github.com/VladimirAlbrekht/movies-explorer-frontend/tree/level-3))
+* [Ссылка на GitHub на фронтенд-часть проекта] (https://github.com/VladimirAlbrekht/movies-explorer-frontend/tree/level-3)
   
