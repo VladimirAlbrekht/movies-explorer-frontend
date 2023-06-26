@@ -3,15 +3,3 @@
   height: 100%;
   min-height: calc(100vh - 170px);
 }
-
-@media (max-width: 768px) {
-  .saved-movies {
-    padding: 18px 0 0;
-  }
-}
-
-@media (max-width: 568px) {
-  .saved-movies {
-    padding: 18px 0 0;
-  }
-}
