@@ -123,7 +123,7 @@
   .profile {
     align-items: center;
     justify-content: center;
-    padding-top: 250px;
+    padding-top: 312px;
   }
 
   .profile__box {
@@ -150,6 +150,6 @@
     line-height: 1.25;
   }
   .profile__btn_type_redact {
-    margin-top: 358px;
+    margin-top: 155px;
   }
 }
