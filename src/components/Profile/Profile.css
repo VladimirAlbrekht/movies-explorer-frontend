@@ -133,6 +133,10 @@
   .profile__form {
     margin-top: 78px;
   }
+  
+  .profile__btn_type_redact {
+    margin-top: 155px;
+  }
 }
 
 @media (max-width: 568px) {
@@ -149,7 +153,5 @@
     font-size: 12px;
     line-height: 1.25;
   }
-  .profile__btn_type_redact {
-    margin-top: 155px;
-  }
+
 }
