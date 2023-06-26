@@ -142,7 +142,7 @@
 @media (max-width: 568px) {
   .profile {
     width: 260px;
-    padding: 90px 0 40px;
+    padding: 142px 0 40px;
   }
 
   .profile__form {
@@ -152,6 +152,10 @@
   .profile__btn {
     font-size: 12px;
     line-height: 1.25;
+  }
+  
+  .profile__btn_type_redact {
+    margin-top: 329px;
   }
 
 }
