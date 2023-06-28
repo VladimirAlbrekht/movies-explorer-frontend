@@ -84,6 +84,7 @@ function Profile({ onSignOut, onUpdate, infoMessage }) {
               minLength='2'
               maxLength='30'
               required
+              pattern="^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,6}$"
               id='email'
               disabled={!isInputActive}
               placeholder="Укажите ваш email"
