@@ -61,6 +61,7 @@ function Entrance({
                             name='email'
                             minLength='2'
                             maxLength='30'
+                            pattern="^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,6}$"
                             required
                             placeholder="Укажите ваш email"
                             title="Укажите ваш email"
