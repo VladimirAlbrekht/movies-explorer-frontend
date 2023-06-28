@@ -25,9 +25,9 @@ function MoviesCardList({isLoading,
   // задаем значения для отображения карточек при изменении ширины экрана
   React.useEffect(() => {
     if (width > 1331) {
-      setCardsShowParams({ sum: 8, more: 4 });
+      setCardsShowParams({ sum: 12, more: 4 });
     } else if (width <= 1331 && width > 1027) {
-      setCardsShowParams({ sum: 12, more: 3 });
+      setCardsShowParams({ sum: 12, more: 4 });
     } else if (width <= 1027 && width > 629) {
       setCardsShowParams({ sum: 8, more: 2 });
     } else if (width <= 629) {
