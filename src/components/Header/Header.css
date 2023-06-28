@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 20;
+  max-width: 1280px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 18px 70px;
+  box-sizing: border-box;
+}
+
+@media (max-width:768px) {
+  .header {
+    justify-content: space-between;
+    padding: 18px 30px;
+  }
+}
+
+@media (max-width:568px) {
+  .header {
+    justify-content: space-between;
+    padding: 14px;
+  }
+}
